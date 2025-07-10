@@ -1,0 +1,170 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #ff0000;
+    --secondary-color: #1da1f2;
+    --card-bg: #1e1e1e;
+}
+
+body.light-mode {
+    --bg-color: #f0f0f0;
+    --text-color: #000000;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #000000, var(--bg-color));
+}
+
+.hero-image {
+    max-width: 300px;
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    color: var(--secondary-color);
+}
+
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    transition: opacity 0.3s;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #bbb;
+    cursor: pointer;
+}
+
+.section-content {
+    display: block; /* По умолчанию открыто */
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+#theme-toggle {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        display: none; /* Сворачиваем на мобильных */
+    }
+    
+    h2 {
+        cursor: pointer;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        --bg-color: #f0f0f0;
+        --text-color: #000000;
+        --card-bg: #ffffff;
+    }
+}
