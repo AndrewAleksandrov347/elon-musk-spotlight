@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт про Илона Маска: биография, компании и достижения.">
+    <title>Elon Musk Spotlight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Elon Musk Spotlight</h1>
+            <p>Илон Маск – визионер, меняющий мир через инновации. Родился 28 июня 1971 года в ЮАР, стал одним из самых влиятельных предпринимателей в области технологий, космоса и ИИ. Его компании революционизируют транспорт, энергетику и коммуникации.</p>
+            <img src="https://example.com/elon-musk-hero.jpg" alt="Илон Маск" class="hero-image" onclick="openModal(this.src, this.alt)">
+            <button id="theme-toggle">Переключить тему</button>
+        </div>
+    </header>
+
+    <section id="biography">
+        <h2 onclick="toggleSection('bio-content')">Биография</h2>
+        <div id="bio-content" class="section-content">
+            <p>Илон Рив Маск родился 28 июня 1971 года в Претории, ЮАР, в состоятельной семье. Его мать – модель и диетолог Мэй Маск, отец – инженер Эррол Маск. После развода родителей в 1979 году Илон жил с отцом и рано проявил интерес к компьютерам: в 10 лет научился программировать, а в 12 продал свою первую игру Blastar за $500.</p>
+            <p>В 1989 году, чтобы избежать военной службы в ЮАР, Маск переехал в Канаду через гражданство матери. Работал на низкооплачиваемых работах, включая чистку котельных. Учился в Queen's University в Онтарио два года, затем перевелся в Университет Пенсильвании, где в 1997 году получил степени бакалавра по физике и экономике. Был принят в аспирантуру Стэнфорда по материаловедению, но не поступил, решив заняться интернет-бизнесом.</p>
+            <p>Карьера началась в 1995 году с основания Zip2 – компании по веб-софту для газет, проданной в 1999 году за $307 млн (Маск получил $22 млн). В 1999 году создал X.com, которая слилась с Confinity и стала PayPal; в 2002 году eBay купила её за $1.5 млрд, Маск заработал $175.8 млн.</p>
+            <p>В 2002 году основал SpaceX для снижения затрат на космические запуски и колонизации Марса. В 2004 году инвестировал в Tesla и стал CEO в 2008 году. В 2016 году создал Neuralink для интеграции мозга с ИИ и The Boring Company для туннелей. В 2015 году соосновал OpenAI (вышел в 2018), а в 2023 – xAI для генеративного ИИ. В 2022 году купил Twitter за $44 млрд, переименовал в X в 2023 году, ввел платную верификацию и сократил штат, что привело к росту дезинформации.</p>
+            <p>Политически активен: в 2024 году был крупнейшим донором в США, поддерживая Дональда Трампа, но в июле 2025 года объявил о создании новой партии "America Party" после разрыва с Трампом из-за налоговых реформ. В январе 2025 года вызвал скандал жестом на инаугурации Трампа, интерпретированным как нацистский салют.</p>
+            <ul class="timeline">
+                <li>1971: Рождение в ЮАР.</li>
+                <li>1997: Дипломы в Пенсильвании.</li>
+                <li>2002: Основание SpaceX.</li>
+                <li>2008: CEO Tesla.</li>
+                <li>2022: Покупка Twitter/X.</li>
+                <li>2025: Создание "America Party".</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="companies">
+        <h2>Компании</h2>
+        <div class="company-cards">
+            <div class="card">
+                <img src="https://example.com/tesla-logo.jpg" alt="Tesla" onclick="openModal(this.src, this.alt)">
+                <h3>Tesla</h3>
+                <p>Tesla – лидер в производстве электромобилей и возобновляемой энергии. Основана в 2003 году, Маск инвестировал в 2004 и стал CEO в 2008. Ключевые модели: Model S (2012), Model 3 (2017, бестселлер 2023), Cybertruck (2023). В 2016 приобрела SolarCity для солнечной энергии. Рыночная капитализация превысила $1 трлн в 2021. Цель: Ускорить переход к устойчивой энергии. В 2025 году Tesla продолжает доминировать в EV-рынке, с фокусом на автономное вождение (FSD) и энергохранилища.</p>
+                <a href="https://www.tesla.com/" target="_blank">Официальный сайт</a>
+            </div>
+            <div class="card">
+                <img src="https://example.com/spacex-logo.jpg" alt="SpaceX" onclick="openModal(this.src, this.alt)">
+                <h3>SpaceX</h3>
+                <p>SpaceX – космическая компания, основанная Маском в 2002 году для многоразовых ракет и колонизации Марса. Достижения: Первый орбитальный запуск Falcon 1 (2008), контракт NASA на $1.6 млрд (2008), первая стыковка с МКС (2012), первая пилотируемая миссия Demo-2 (2020). Starlink – сеть из >7600 спутников для глобального интернета, стоимость проекта ~$10 млрд. В 2024 получила $843 млн от NASA на вывод МКС с орбиты. Поддержка Украины Starlink с 2022. В 2025 году SpaceX лидирует в запусках, доставляя ~90% массы на орбиту Земли.</p>
+                <a href="https://www.spacex.com/" target="_blank">Официальный сайт</a>
+            </div>
+            <div class="card">
+                <img src="https://example.com/xai-logo.jpg" alt="xAI" onclick="openModal(this.src, this.alt)">
+                <h3>xAI</h3>
+                <p>xAI основана Маском в июле 2023 для разработки генеративного ИИ, конкурируя с OpenAI. Нанимает инженеров из Google и OpenAI. Продукты включают Grok – ИИ-ассистента. По состоянию на июль 2025, Grok-4 практически не ошибается в математике/физике и может исправлять ошибки в вопросах. Цель: Понять вселенную через ИИ. В 2025 году xAI фокусируется на "rigorous adherence to truth" в AI-разработках.</p>
+                <a href="https://x.ai/" target="_blank">Официальный сайт</a>
+            </div>
+            <div class="card">
+                <img src="https://example.com/neuralink-logo.jpg" alt="Neuralink" onclick="openModal(this.src, this.alt)">
+                <h3>Neuralink</h3>
+                <p>Neuralink – нейротехнологическая компания, основанная в 2016 для интеграции мозга с ИИ. Получила одобрение FDA на испытания на людях в 2023. Импланты тестировались на животных (свиньи в 2020). Цель: Помогать парализованным и улучшать когнитивные способности. В 2025 году компания продолжает клинические испытания.</p>
+                <a href="https://neuralink.com/" target="_blank">Официальный сайт</a>
+            </div>
+            <div class="card">
+                <img src="https://example.com/x-logo.jpg" alt="X" onclick="openModal(this.src, this.alt)">
+                <h3>X (бывший Twitter)</h3>
+                <p>Приобретен Маском в 2022 за $44 млрд, переименован в X в 2023. Ввел ежемесячную подписку за верификацию ($8), сократил штат, что привело к росту ненависти и дезинформации. В 2023 Маск ушел с поста CEO, став председателем и CTO. Активно используется для постов Маска, включая объявление о "America Party" в июле 2025. В 2025 году расширяется: запуск X Money (финтех-платформа) и X TV (стриминговый сервис).</p>
+                <a href="https://x.com/" target="_blank">Официальный сайт</a>
+            </div>
+            <div class="card">
+                <img src="https://example.com/boring-company-logo.jpg" alt="The Boring Company" onclick="openModal(this.src, this.alt)">
+                <h3>The Boring Company</h3>
+                <p>The Boring Company основана в 2016 для строительства туннелей и гиперлупов, чтобы решить проблему трафика. Ключевые проекты: Vegas Loop в Лас-Вегасе (2021), туннели для высокоскоростного транспорта. Цель: Делать туннелирование быстрее и дешевле. В 2025 году компания продолжает расширять инфраструктурные проекты.</p>
+                <a href="https://www.boringcompany.com/" target="_blank">Официальный сайт</a>
+            </div>
+            <div class="card">
+                <img src="https://example.com/doge-logo.jpg" alt="DOGE" onclick="openModal(this.src, this.alt)">
+                <h3>Department of Government Efficiency (DOGE)</h3>
+                <p>В 2025 году Маск возглавил DOGE – некоммерческий департамент в США для оптимизации правительственных расходов (с Вивеком Рамасвами). Не компания, но значимая роль: цель сократить бюрократию и повысить эффективность. Анонсировано в конце 2024, активно работает с 2025.</p>
+                <a href="https://example.com/doge-info" target="_blank">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2 onclick="toggleSection('ach-content')">Достижения</h2>
+        <div id="ach-content" class="section-content">
+            <ul>
+                <li>Разработка многоразовых ракет в SpaceX, снижающих стоимость запусков (первая посадка в 2015).</li>
+                <li>Tesla стал самым ценным автопроизводителем в 2020, вошел в S&P 500, капитализация >$1 трлн в 2021.</li>
+                <li>Starlink обеспечивает интернет в удаленных районах, включая Украину во время войны (бесплатно с 2022, стоимость для SpaceX ~$400 млн/год).</li>
+                <li>Основание xAI и Grok-4, который решает сложные задачи в науке без ошибок (2025).</li>
+                <li>Neuralink: Одобрение FDA для человеческих испытаний (2023), потенциал для лечения паралича.</li>
+                <li>Политическое влияние: Крупнейший донор в США 2024, создание "America Party" в 2025 после опроса на X.</li>
+                <li>Вклад в возобновляемую энергию: Tesla Energy и SolarCity, продвижение электромобилей.</li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zIwLWfaAg-8" title="Запуск Falcon Heavy" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Elon Musk Spotlight. Все права защищены. Следите за Илоном на X: <a href="https://x.com/elonmusk" target="_blank">@elonmusk</a>. Создано с помощью Grok от xAI.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" class="modal-content" src="" alt="">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
